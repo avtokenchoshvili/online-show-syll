@@ -6,14 +6,27 @@
             <img src="assets/your-logo.png" alt="logo" style="height: 30px;"> <!-- Adjust size as needed -->
         </a>
 
+        <!-- Icons for mobile view (left side of menu on mobile) -->
+        <div class="d-lg-none">
+            <button class="btn" type="button">
+                <i class="bi bi-search"></i> <!-- Bootstrap Icons for search -->
+            </button>
+            <button class="btn" type="button">
+                <i class="bi bi-person"></i> <!-- Bootstrap Icons for person -->
+            </button>
+            <button class="btn" type="button">
+                <i class="bi bi-basket"></i> <!-- Bootstrap Icons for shopping -->
+            </button>
+        </div>
+
         <!-- Toggler/collapsible Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar links and icons -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <!-- Navbar links - centered in desktop view -->
+        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -39,8 +52,8 @@
             </ul>
         </div>
 
-        <!-- Right side icons -->
-        <div class="d-flex">
+        <!-- Right side icons for desktop view -->
+        <div class="d-none d-lg-flex">
             <button class="btn" type="button">
                 <i class="bi bi-search"></i> <!-- Bootstrap Icons for search -->
             </button>
